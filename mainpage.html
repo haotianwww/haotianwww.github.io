@@ -1,0 +1,235 @@
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Personal Homepage</title>
+    <meta name="description" content="Personal homepage and portfolio.">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta name="robots" content="all">
+    <meta content="en_EN" property="og:locale">
+    <meta content="website" property="og:type">
+    <meta content="https://shikun.io/projects/clarity" property="og:url">
+    <meta content="Clarity" property="og:title">
+    <meta content="Website Template for AI Research" property="og:description">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@your_twitter_id">
+    <meta name="twitter:description" content="Clarity: A Minimalist Website Template for AI Research">
+    <meta name="twitter:image:src" content="assets/figures/clarity.png">
+
+    <link rel="stylesheet" type="text/css" media="all" href="assets/stylesheets/main_free.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="clarity/clarity.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/foundation.min.css">
+    <link href="assets/fontawesome-free-6.6.0-web/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/styles.css"/>
+    <script defer src="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/index.js"></script>
+    <script src="assets/scripts/navbar.js"></script> <!-- Comment to remove table of content. -->
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            "HTML-CSS": {
+              scale: 95,
+              fonts: ["Gyre-Pagella"],
+              imageFont: null,
+              undefinedFamily: "'Arial Unicode MS', cmbright"
+            },
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                processEscapes: true
+              }
+          });
+    </script>
+    <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="mainpage.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="assets/files/resume.pdf">Résumé</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        <ul class="social-icons">
+            <li><a href="https://scholar.google.com/citations?user=xSFLmCkAAAAJ&hl=en" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-graduation-cap"></i></a></li>
+            <li><a href="https://github.com/your_username" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/haotian-wang-whu/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
+    </nav>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Haotian Wang</h1>
+    
+            <p class="intro">
+                I am Haotian Wang, a third-year PhD researcher with experience applying 
+                <b>machine learning</b> and <b>statistical modeling</b> to large-scale, real-world data.
+            </p>
+    
+            <p class="research-statement">
+                I build end-to-end ML systems for large-scale spatiotemporal data, integrating ground
+                measurements and remote sensing to support robust, uncertainty-aware decision-making
+                in hydrology, climate, and agriculture.
+            </p>
+    
+            <div class="hero-buttons">
+                <a href="about.html" class="read-more-btn">Read More →</a>
+                <a href="assets/files/resume.pdf" class="read-more-btn">Résumé →</a>
+            </div>
+        </div>
+    
+        <div class="hero-photo">
+            <img src="assets/figures/profile.jpg" alt="Haotian Wang">
+        </div>
+    </section>
+    
+
+
+    <div class="container blog main first wide" id="blog-main">
+        <h1>Publications & Projects</h1>
+        
+        <ul class="pub-list">
+            <li class="pub-item">
+                <div class="pub-image">
+                    <img src="assets/figures/project_inundation/1_framework.png" alt="Project thumbnail">
+                </div>
+                <div class="pub-content">
+                    <h3 class="pub-title">A Two-Stage Machine Learning Framework for Reliable Flood Inundation Mapping under Imbalanced Data</h3>
+                    <p class="pub-authors"><b>Haotian Wang</b>, Fangni Lei, Xinyi Shen, Qing Yang, Emmanouil N Anagnostou, Wade T Crow, Hyunglok Kim, Clara Chew</p>
+                    <p class="pub-venue">Journal of Hydrology 2025</p>
+                    <p class="pub-description">
+                        Accurate and timely flood mapping is critical for disaster response and risk management, yet remains challenging due to sparse signals and highly imbalanced data.
+                        We develop a two-stage machine learning framework that explicitly tackles data imbalance by separating flood detection from extent estimation, enabling more reliable and scalable flood mapping from satellite observations.
+                    </p>
+                    <div class="pub-links">
+                        <a href="#"><i class="fa-solid fa-link"></i> Project Page</a>
+                        <a href="https://www.sciencedirect.com/science/article/abs/pii/S0022169425015628"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="pub-item">
+                <div class="pub-image">
+                    <img src="assets/figures/project_fillinggap/1_inputdata.png" alt="Project thumbnail">
+                </div>
+                <div class="pub-content">
+                    <h3 class="pub-title">Generative Vision Model for Flood Change Detection</h3>
+                    <p class="pub-authors">Faezeh Maghsoodifar, Md Shadman Sakib, Mohamed Mowafy, Haotian Wang, Sagy Cohen, Yinphan Tsang, Hamed Moftakhari, David F Muñoz, Patrick Ray, Fangni Lei</p>
+                    <p class="pub-venue">CUAHSI 2025</p>
+                    <p class="pub-description">
+                        Instead of interpolating flood maps pixel-wise, this work adopts an image warping formulation that captures how flood extents evolve spatially across return periods.
+                        A deep learning model is used to learn constrained deformation fields under monotonic risk assumptions, providing a statistically grounded and computationally efficient way to reconstruct missing flood scenarios.
+                    </p>
+                    <div class="pub-links">
+                        <a href="#"><i class="fa-solid fa-link"></i> Project Page</a>
+                        <a href="#"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+
+                    </div>
+                </div>
+            </li>
+
+            <li class="pub-item">
+                <div class="pub-image">
+                    <img src="assets/figures/project_fim/2_result1.png" alt="Project thumbnail">
+                </div>
+                <div class="pub-content">
+                    <h3 class="pub-title">Quantifying Didelity-accuracy Trade-off in Operational Flood Mapping: A Comparative Analysis</h3>
+                    <p class="pub-authors">Md Shadman Sakib, Mohamed Mowafy, Haotian Wang, Faezeh Maghsoodifar, Sagy Cohen, Yinphan Tsang, David F Muñoz, Patrick Ray, Fangni Lei, Hamed Moftakhari</p>
+                    <p class="pub-venue">CUAHSI 2025</p>
+                    <p class="pub-description">
+                        This project builds an automated data evaluation pipeline that standardizes heterogeneous datasets across formats, resolutions, and data types, enabling scalable and reproducible accuracy comparisons.
+                        The system integrates statistical evaluation, visualization, and reporting into a fully automated workflow, delivering both an interactive dashboard and a production-ready pipeline for continuous model and data assessment.
+                    </p>
+                    <div class="pub-links">
+                        <a href="#"><i class="fa-solid fa-link"></i> Project Page</a>
+                        <a href="#"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+
+                    </div>
+                </div>
+            </li>
+            
+            <li class="pub-item">
+                <div class="pub-image">
+                    <img src="assets/figures/project_evaluation/1_frontfigure.png" alt="Project thumbnail">
+                </div>
+                <div class="pub-content">
+                    <h3 class="pub-title">An A/B Evaluation Framework for Soil Moisture Products Using Statistical Error Decomposition</h3>
+                    <p class="pub-authors"><b>Haotian Wang</b>, Qiangqiang Yuan, Hongfei Zhao, Hongzhang Xu</p>
+                    <p class="pub-venue">Journal of Hydrology 2022</p>
+                    <p class="pub-description">
+                        We design a three-arm A/B test to evaluate competing soil moisture estimation strategies across diverse environmental conditions.
+                        By leveraging a statistical error-decomposition model rather than direct pairwise comparison, the study isolates the strengths and weaknesses of each data source.
+                    </p>
+                    <div class="pub-links">
+                        <a href="#"><i class="fa-solid fa-link"></i> Project Page</a>
+                        <a href="https://www.sciencedirect.com/science/article/abs/pii/S0022169422012860"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+                        
+                    </div>
+                </div>
+            </li>
+            
+            <!-- <li class="pub-item">
+                <div class="pub-image">
+                    <img src="assets/figures/clarity.png" alt="Project thumbnail">
+                </div>
+                <div class="pub-content">
+                    <h3 class="pub-title">Multi-Modal Learning with Vision-Language Models</h3>
+                    <p class="pub-authors">Haotian Wang, David Lee, Emma White</p>
+                    <p class="pub-venue">CVPR 2024</p>
+                    <p class="pub-description">
+                        We propose a unified framework for multi-modal learning that effectively combines visual and textual 
+                        information. Our approach achieves superior results on image-text retrieval and visual question answering tasks.
+                    </p>
+                    <div class="pub-links">
+                        <a href="#"><i class="fa-solid fa-link"></i> Project Page</a>
+                        <a href="#"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+                        <a href="#"><i class="fa-solid fa-external-link"></i> arXiv</a>
+                        <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </li>
+            
+            <li class="pub-item">
+                <div class="pub-image">
+                    <img src="assets/figures/clarity.png" alt="Project thumbnail">
+                </div>
+                <div class="pub-content">
+                    <h3 class="pub-title">Robust Adversarial Training for Deep Neural Networks</h3>
+                    <p class="pub-authors">Haotian Wang, Frank Miller, Grace Taylor</p>
+                    <p class="pub-venue">ICLR 2024</p>
+                    <p class="pub-description">
+                        This work presents a new adversarial training method that improves model robustness against 
+                        various attack strategies while maintaining clean accuracy on standard benchmarks.
+                    </p>
+                    <div class="pub-links">
+                        <a href="#"><i class="fa-solid fa-link"></i> Project Page</a>
+                        <a href="#"><i class="fa-solid fa-file-pdf"></i> PDF</a>
+                        <a href="#"><i class="fa-solid fa-external-link"></i> arXiv</a>
+                        <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+    <!-- Footer Page -->
+    <footer>
+        <div class="container">
+            <p>
+                This website is built on the <a href="https://shikun.io/projects/clarity">Clarity Template</a>, designed by <a href="https://shikun.io/">Shikun Liu</a>.
+            </p>
+        </div>    
+    </footer>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="clarity/clarity.js"></script>    
+    <script src="assets/scripts/main.js"></script>    
+</body>
+</html>
